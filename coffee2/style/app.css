@@ -1,0 +1,201 @@
+/*  وبسایت رو در حالت موبایل مشاهده کنید  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    src: url(../Font/Persian__font/Vazir-Bold.ttf);
+    font-family: "VazirB";
+}
+
+@font-face {
+    src: url(../Font/Persian__font/Vazir-Light.ttf);
+    font-family: "VazirL";
+}
+
+@font-face {
+    src: url(../Font/Persian__font/Vazir-Medium.ttf);
+    font-family: "VazirM";
+}
+@font-face {
+    src: url(../Font/English__font/Poppins-Black.ttf);
+    font-family: "PB";
+}
+
+body {
+    font-family: "VazirB";
+    overflow-x: hidden;
+    background-color: #37302b;
+    position: relative;
+    min-height: 100vh;
+    color: #f3f3f3;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../Picture/bgcofee.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    z-index: -1;
+}
+.cover {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.cover h1 {
+    font-size: 1.8rem;
+    margin: 20px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    /* font-family: "PB";  */
+    letter-spacing: 1.5px;
+}
+
+.menu-tabs {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 15px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.menu-tabs::-webkit-scrollbar {
+    display: none;
+}
+
+.menu-tab {
+    background-color: #6c5746;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    color: #f3f3f3;
+    font-size: 1.1rem;
+    font-family: "VazirM";
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.menu-tab.active {
+    background-color: #8a6d56;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+.menu-section {
+    display: none;
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px;
+    animation: fadeIn 0.4s ease;
+    -webkit-animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.menu-section.active {
+    display: flex;
+}
+
+.section-title {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #f3f3f3;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+/* وبسایت را در حالت موبایل مشاهده کنید */
+.menu-item {
+    background-color: rgba(108, 87, 70, 0.5);
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+}
+
+.item-image {
+    width: 100%;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+.item-name {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.item-price {
+    font-size: 1.2rem;
+    color: #f3f3f3;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .cover h1 {
+        font-size: 1.4rem;
+    }
+    
+    .menu-tab {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .section-title {
+        font-size: 1.3rem;
+    }
+    
+    .menu-items {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+    
+    .item-image {
+        height: 100px;
+    }
+}
+/* وبسایت رو در حالت موبایل مشاهده کنید  */

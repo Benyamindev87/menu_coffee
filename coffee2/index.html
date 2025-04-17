@@ -1,0 +1,233 @@
+<!-- وبسایت رو در حالت موبایل مشاهده کنید -->
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benyamin_menu</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="style/app.css">
+</head>
+
+<body>
+    <section class="cover">
+        <header>
+            <div class="welcome_text">
+                <h1 data-aos="fade-up">Welcom To Friends CofeeShop</h1>
+            </div>
+        </header>
+        
+        <main>
+            <div class="menu-tabs">
+                <button class="menu-tab active" onclick="showSection('hot-drinks')">گرم‌نوش</button>
+                <button class="menu-tab" onclick="showSection('cold-drinks')">سردنوش</button>
+                <button class="menu-tab" onclick="showSection('desserts')">دسر</button>
+                <button class="menu-tab" onclick="showSection('shakes')">شیک</button>
+                <!-- <button class="menu-tab" onclick="showSection('pizza')">پیتزا</button> -->
+                <button class="menu-tab" onclick="showSection('ice-cream')">بستنی</button>
+            </div>
+        </main>
+        
+        <footer>
+            <!-- گرم‌نوش -->
+            <div class="menu-section active" id="hot-drinks" data-aos="fade-up">
+                <h3 class="section-title">گرم‌نوش‌ها</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="Picture/sscofee.png" class="item-image" alt="">
+                        <div class="item-name">اسپرسو</div>
+                        <div class="item-price">30,000</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="Picture/sdcofee.png" class="item-image" alt="">
+                        <div class="item-name">اسپرسو دبل</div>
+                        <div class="item-price">60,000</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="Picture/americano.png" class="item-image" alt="">
+                        <div class="item-name">آمریکانو </div>
+                        <div class="item-price">65,000</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="Picture/cap.png" class="item-image" alt="">
+                        <div class="item-name">کاپوچینو</div>
+                        <div class="item-price">65,000</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="Picture/late.png" class="item-image" alt="">
+                        <div class="item-name">لاته</div>
+                        <div class="item-price">75,000</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="Picture/hot.png" class="item-image" alt="">
+                        <div class="item-name">هات چاکلت</div>
+                        <div class="item-price">70,000</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- سردنوش -->
+            <div class="menu-section" id="cold-drinks" data-aos="fade-up">
+                <h3 class="section-title">سردنوش‌ها</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="./Picture/lemonad.png" class="item-image" alt="">
+                        <div class="item-name">لیموناد</div>
+                        <div class="item-price">60,000</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./Picture/apple.png" class="item-image" alt="">
+                        <div class="item-name">آب سیب</div>
+                        <div class="item-price">65,000</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./Picture/orange.png" class="item-image" alt="">
+                        <div class="item-name">آب پرتقال</div>
+                        <div class="item-price">70,000</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./Picture/pemogrant.png" class="item-image" alt="">
+                        <div class="item-name">آب انار</div>
+                        <div class="item-price">80,000</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./Picture/carrot.png" class="item-image" alt="">
+                        <div class="item-name">آب هویج</div>
+                        <div class="item-price">75,000</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- دسر -->
+            <div class="menu-section" id="desserts" data-aos="fade-up">
+                <h3 class="section-title">دسرها</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="./Picture/tra.png" class="item-image" alt="">
+                        <div class="item-name">کیک تیرامیسو</div>
+                        <div class="item-price">70,000</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./Picture/cheese.png" class="item-image" alt="">
+                        <div class="item-name">چیز کیک</div>
+                        <div class="item-price">70,00</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./Picture/chocolatcake.png" class="item-image" alt="">
+                        <div class="item-name">کیک شکلات </div>
+                        <div class="item-price">80,000</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./Picture/strawbry.png" class="item-image" alt="">
+                        <div class="item-name">کیک توت فرنگی </div>
+                        <div class="item-price">90,000</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- شیک -->
+            <div class="menu-section" id="shakes" data-aos="fade-up">
+                <h3 class="section-title">شیک‌ها</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="./Picture/notela1.png" class="item-image" alt="">
+                        <div class="item-name">شیک نوتلا</div>
+                        <div class="item-price">80,000</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./Picture/strawshike.png" class="item-image" alt="">
+                        <div class="item-name">شیک توت فرنگی</div>
+                        <div class="item-price">90,000</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./Picture/banana.png" class="item-image" alt="">
+                        <div class="item-name">شیک موز نوتلا</div>
+                        <div class="item-price">110,000</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./Picture/wanil.png" class="item-image" alt="">
+                        <div class="item-name">شیک وانیل</div>
+                        <div class="item-price">100,000</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- پیتزا
+            <div class="menu-section" id="pizza" data-aos="fade-up">
+                <h3 class="section-title">پیتزاها</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="" class="item-image" alt="">
+                        <div class="item-name">پیتزا  مرغ</div>
+                        <div class="item-price">350,000</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="" class="item-image" alt="">
+                        <div class="item-name">پیتزا گوشت و قارچ</div>
+                        <div class="item-price">350,000</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="" class="item-image" alt="">
+                        <div class="item-name">پیتزا پپرونی</div>
+                        <div class="item-price">380,000</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="" class="item-image" alt="">
+                        <div class="item-name">پیتزا مخصوص</div>
+                        <div class="item-price">400,000</div>
+                    </div>
+                </div>
+            </div>
+             -->
+ 
+ 
+ 
+             <!-- بستنی -->
+            <div class="menu-section" id="ice-cream" data-aos="fade-up">
+                <h3 class="section-title">بستنی‌ها</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="./Picture/icecreamz.png" class="item-image" alt="">
+                        <div class="item-name">بستنی زعفران </div>
+                        <div class="item-price">300,000</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./Picture/icecreamw.png" class="item-image" alt="">
+                        <div class="item-name">بستنی وانیلی </div>
+                        <div class="item-price">220,000</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./Picture/icecreamc.png" class="item-image" alt="">
+                        <div class="item-name">بستنی شکلاتی </div>
+                        <div class="item-price">280,000</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./Picture/icecreamt.png" class="item-image" alt="">
+                        <div class="item-name">بستنی توت فرنگی </div>
+                        <div class="item-price">235,000</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+        
+        function showSection(sectionId) {
+            document.querySelectorAll('.menu-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            event.currentTarget.classList.add('active');
+            document.querySelectorAll('.menu-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
+<!-- وبسایت رو در حالت موبایل مشاهده کنید -->
